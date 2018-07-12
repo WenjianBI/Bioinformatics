@@ -26,7 +26,7 @@ NOTE: please update "DIR_DB=/home/wbi1/Bioinformatic-software/ANNOVAR/humandb" i
 [Michigan imputation Server](https://imputationserver.sph.umich.edu/index.html#!pages/home) is well developted to impute data for more genome coverage.
 - Please remember to select the closest reference panel based on the study samples population
 - Will Rayner provides a great toolbox to prepare data for imputation: [HRC preparation checking Tool](http://www.well.ox.ac.uk/~wrayner/tools/)
-- R2 greater than 0.3 is a widely used filter. The below is an example code.
+- R2 greater than 0.3 is a widely used filter. The below is an example code (Note that tabix index file is required).
 ```
 module load vcflib/051916
 vcffilter -f "R2 > 0.3" -f "MAF < 0.05" input_vcfgz > output_vcf  
