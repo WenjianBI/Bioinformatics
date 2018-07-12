@@ -30,9 +30,9 @@ cd ${DIR}
 ## STEP 2. GENERATE ANNOVAR INPUT BASED ON VCF FILE
 
 convert2annovar.pl -format vcf4 ${VCF} -outfile ${PREFIX}.tmp.av -allsample -withfreq   # CREATE POSITION ROWS OF ANNOVAR FORMAT
-cat ${VCF} | grep -v "^#" | cut -f 2,4,5 > ${PREFIX}.tmp.pos                                # RETAIN ORIGINAL VCF FILE POSITION
+cat ${VCF} | grep -v "^#" | cut -f 2,4,5 > ${PREFIX}.tmp.pos                            # RETAIN ORIGINAL VCF FILE POSITION
 paste ${PREFIX}.tmp.av ${PREFIX}.tmp.pos > ${PREFIX}.tmp.avinput                        # PASTE THE ABOVE TWO FILES
-cat ${PREFIX}.tmp.avinput | cut -f 1-5,9,10,11 > ${PREFIX}.avinput                            # REMOVE UNIMPORTANT COLUMNS
+cat ${PREFIX}.tmp.avinput | cut -f 1-5,9,10,11 > ${PREFIX}.avinput                      # REMOVE UNIMPORTANT COLUMNS
 rm ${PREFIX}.tmp.avinput ${PREFIX}.tmp.pos ${PREFIX}.tmp.av                             # REMOVE TEMP FILES
 
 
