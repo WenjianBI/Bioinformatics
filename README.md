@@ -2,6 +2,7 @@
 This repository includes usage of some bioinformatics software
 
 ## Bad interpreter  
+This issue happens a lot when creating scripts in Windows env and then porting over to run on a Unix environment.
 ```
 sed -i -e 's/\r$//' scriptname.sh
 ```
