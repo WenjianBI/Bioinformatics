@@ -1,6 +1,11 @@
 # Bioinformatics
 This repository includes usage of some bioinformatics software
 
+## Bad interpreter  
+```
+sed -i -e 's/\r$//' scriptname.sh
+```
+
 ## ANNOVAR
 Bash files to annotate VCF files based on hg38/hg19 reference assembly.
 
