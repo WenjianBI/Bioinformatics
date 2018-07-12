@@ -8,6 +8,7 @@ Bash files to annotate VCF files based on hg38/hg19 reference assembly.
 - DIR: directory to all output and temporary files
 - VCF: input file of .vcf/.vcf.gz, complete directory is required
 - PREFIX: prefix for all output and temporary files
+
 NOTE: please update "DIR_DB=/home/wbi1/Bioinformatic-software/ANNOVAR/humandb" if changed.
 ### Usage
 ```
