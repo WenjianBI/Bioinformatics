@@ -11,9 +11,9 @@ fi
 module load vcftools/0.1.13
 module load annovar/030717
 
-DIR=$1   # directory to all output and temporary files
-VCF=$2    # input .vcf OR .vcf.gz files, should include directory
-PREFIX=$3       # prefix for all output and temporary files
+DIR=$1     # directory to all output and temporary files
+VCF=$2     # input .vcf OR .vcf.gz files, should include directory
+PREFIX=$3  # prefix for all output and temporary files
 DIR_DB=/home/wbi1/Bioinformatic-software/ANNOVAR/humandb
 
 if (($#==4)) # if there are 4 argumenets, that should be argument to extract bed files
